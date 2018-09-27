@@ -77,9 +77,6 @@ gen### VisualStudioCode template
 
 appsettings*
 
-bin/
-obj/
-*bin/*
-*obj/*
-
-.idea*
+.idea/*
+bin/*
+obj/*
