@@ -448,6 +448,11 @@ a.btn.btn-border-white:focus {
   outline: 0;
 }
 
+.text-lower
+{
+  text-transform: lowercase !important;
+}
+
 .form-control-custom {
   border: 0;
   height: 2px;
@@ -817,8 +822,14 @@ header {
 
 body.bg-dark
 {
-  overflow: hidden;
+  overflow: hidden !important;
   background: url("../images/header-overlay.png") 0 0 no-repeat, url("../images/section-background.svg"), url("../images/header-bg-azure.png") !important;
+  background-attachment: fixed !important;
+}
+
+.page-content
+{
+  overflow: hidden !important;
 }
 
 .page-amplitude-wrapper + .section-overlay,
