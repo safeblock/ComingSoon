@@ -48,7 +48,19 @@
             <p>Be notified of the launching of our SafeBlock.io platform,<br />No spam just one email at the launch !</p>
           </div>
           <div class="p-t-b-30">
-            <partial name="Newsletter"/>
+            <form id="mc-form" asp-action="Subscribe" asp-controller="Home" method="post">
+              <div class="input-group">
+                <input type="email" id="email" class="form-control form-control-light text-lowercase" name="email" placeholder="Enter your Email here...">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-color">
+                    <i class="fa fa-paper-plane"></i>
+                  </button>
+                </span>
+              </div>
+              <div id="message-newsletter" class="message-wrapper text-white message">
+                <span><label class="message-text" for="email"></label></span>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -91,6 +103,7 @@
 <div id="photoswipe"></div>
 <script src="~/js/plugins/jquery1.11.2.min.js"></script>
 <script src="~/js/plugins/bootstrap.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
 <script src="~/js/plugins/newsletter-form.js"></script>
 <script src="~/js/plugins/photoswipe/photoswipe.min.js"></script>
 <script src="~/js/plugins/photoswipe/photoswipe-ui-default.min.js"></script>
